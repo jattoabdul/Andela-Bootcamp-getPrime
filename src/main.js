@@ -15,11 +15,11 @@ module.exports = {
 			primeArray.push(number)
 		}
 	},
-	getPrime: (range) => {
-		if (typeof(range) !== 'number'){
+	getPrime: (num) => {
+		if (typeof(num) !== 'number'){
 			console.log('Number was not Passed into the function');
 		} else {
-			for (let i=1; i<=range; i++){
+			for (let i=1; i<=num; i++){
 				addToArray(i);
 			}
 			console.log(primeArray);

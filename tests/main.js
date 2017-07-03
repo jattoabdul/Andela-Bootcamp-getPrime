@@ -38,16 +38,14 @@ describe("Prime Number", () => {
 		});
 
 		it("should return false for a typeof(value) != number", () => {
-			assert.equal(app.checkPrimeNumber(98), false);
+			let output = getPrime('red');
+			assert.equal(output, 'Number was not Passed into the function');
 		});
 
 		it("should be a function", () => {
 			assert.isFunction(app.getPrime, 'getPrime is a function');
 		});
 
-		// it("should log not a number for a typeof(value) != number", () => {
-
-		// });
 	})
 
 })
