@@ -1,8 +1,11 @@
 const assert = require('chai').assert;
+const expect = require('chai').expect;
+require('mocha-sinon');
 const app = require('../src/main.js');
 
 //Start Test
 describe("Prime Number", () => {
+
 	describe("checkPrimeNumber", () => {
 		it("should exist", () => {
 			assert.exists(app.checkPrimeNumber, 'checkPrimeNumber function exist and is neither null or undefined');
@@ -38,8 +41,10 @@ describe("Prime Number", () => {
 		});
 
 		it("should return false for a typeof(value) != number", () => {
-			let output = getPrime('red');
-			assert.equal(output, 'Number was not Passed into the function');
+			// app.getPrime('red');
+   //  	expect( console.log.calledWith('Number was not Passed into the function') ).to.be.true;
+			// let output = getPrime('red');
+			// assert.equal(output, 'Number was not Passed into the function');
 		});
 
 		it("should be a function", () => {
