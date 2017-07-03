@@ -1,0 +1,24 @@
+{
+  "name": "primenumbers",
+  "version": "1.0.0",
+  "description": "A function that get the prime numbers between two numbers and prints them in an array with a TDD approach",
+  "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/main.js"
+  },
+  "keywords": [
+    "TDD",
+    "javascript",
+    "prime",
+    "numbers"
+  ],
+  "author": "abdulqahhar aminujatto",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
