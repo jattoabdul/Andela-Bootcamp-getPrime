@@ -9,12 +9,15 @@ module.exports = {
 			return true;
 		}
 	},
+
 	primeArray: [],
-	addToArray: (number) =>{
+
+	addToArray: (number) => {
 		if(checkPrimeNumber(number) === true) {
 			primeArray.push(number)
 		}
 	},
+
 	getPrime: (num) => {
 		if (typeof(num) !== 'number'){
 			console.log('Number was not Passed into the function');
