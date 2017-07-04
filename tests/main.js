@@ -40,16 +40,19 @@ describe("Prime Number", () => {
 			assert.exists(app.getPrime, 'check getPrime function exist and is neither null or undefined');
 		});
 
-		it("should return false for a typeof(value) != number", () => {
-			// app.getPrime('red');
-   //  	expect( console.log.calledWith('Number was not Passed into the function') ).to.be.true;
-			// let output = getPrime('red');
-			// assert.equal(output, 'Number was not Passed into the function');
+		it("should return undefined for a typeof(value) != number", () => {
+			assert.equal(app.getPrime('red'), undefined);
+		});
+
+		it("should return undefined for a typeof(value) is negative number", () => {
+			assert.equal(app.getPrime(-1), undefined);
 		});
 
 		it("should be a function", () => {
 			assert.isFunction(app.getPrime, 'getPrime is a function');
 		});
+
+		// add a final test case
 
 	})
 
